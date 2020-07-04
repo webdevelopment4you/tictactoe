@@ -1,0 +1,64 @@
+html,body
+{
+    height:100%;
+    margin:0;
+}
+
+.container
+{
+    height:100%;
+    position: relative;
+    padding-top:4%;
+
+}
+
+h1
+{
+    text-align: center;
+    margin-bottom: 9%;
+}
+
+table, tr, td
+{
+    border-collapse: collapse;
+}
+
+table
+{
+    width:200px;
+    height:200px;
+    margin:0 auto;
+}
+
+td
+{
+    width: 62px;
+    height: 62px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.samebox1
+{
+    border-width:0px 5px 5px 0px;
+    border-style: solid;
+}
+
+.samebox2
+{
+    border-width:0px 5px 0px 0px;
+    border-style: solid;
+}
+
+.samebox3
+{
+    border-width:0px 0px 5px 0px;
+    border-style: solid;
+}
+
+
+footer
+{
+    position: absolute;
+    bottom:0px;
+}

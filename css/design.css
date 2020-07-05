@@ -1,0 +1,79 @@
+html,body
+{
+    height:100%;
+    margin:0;
+}
+
+.container-fluid
+{
+    background-color: darkred;
+    height:100%;
+}
+
+.row1, .row2
+{
+    position: relative;
+    border: 1px solid;
+    height:50%;
+}
+
+
+h1
+{
+    
+    display: block;
+    width: 100%;
+    color:#ffffff;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    position: absolute;
+    animation-name: fly;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.row2
+{
+
+    /* top:50%; */
+}
+
+
+
+.playBtn
+{
+    position: absolute;
+    font-family: 'Bangers', cursive;
+    animation-name: play, scale;
+    animation-duration: 0.5s,1s;
+    animation-delay: 0.4s,1s;
+    animation-fill-mode: both,both;
+    animation-iteration-count: 1,infinite;
+    animation-direction: normal,alternate;
+    animation-timing-function: linear,ease-in-out;
+    margin-top:10px;
+    
+}
+
+@keyframes fly
+{
+    0%{bottom:120%}
+    50%{bottom:60%}
+    100%{bottom:0px}
+}
+
+@keyframes play
+{
+    0%{left:-5%}
+    100%{left: 50%;margin-left: -30px;}
+}
+
+@keyframes scale
+{
+    from{transform: scale(1)}
+    to{transform: scale(1.1)}
+}
+
